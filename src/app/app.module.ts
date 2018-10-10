@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatExpansionModule, MatGridListModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { NewsApiService } from './news-api.service';
@@ -14,7 +14,8 @@ import { NewsApiService } from './news-api.service';
     ],
     imports: [
         BrowserModule, HttpClientModule,
-        BrowserAnimationsModule, MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule
+        BrowserAnimationsModule, MatButtonModule, MatCardModule, MatMenuModule, MatGridListModule,
+        MatToolbarModule, MatIconModule, MatExpansionModule, MatSidenavModule, MatListModule
     ],
     providers: [NewsApiService],
     bootstrap: [AppComponent]

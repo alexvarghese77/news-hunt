@@ -3,25 +3,15 @@
   }
   
   .example-card{
-      margin-top: 4px;
-  }
-  
-  .example-header-image { 
-    background-size: cover;
-  }
-  
-  .title{
-      font-weight: bold;
+      margin:15px;
   }
   
   .img-article{
-      height: 350px;
+      width: 100%;
+      height: auto;
   }
   
-  .action-buttons{
-      text-align: center;
-  }
-      
+    
   .example-container {
       width: 100%;
       height: auto;
@@ -42,10 +32,31 @@
   .source-name {
       margin-left:5px; 
   }
-  
-  .list-item:hover{
+  .newsContent{
+     margin-left: 20px;
+     text-align: left;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  /* .list-item:hover{
       cursor: pointer;
       background-color: #3f51b5;
       color: white;
   }
-  
+   */
+
+  @media only screen and (max-width: 800px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        visibility: visible;
+    }
+}
+  @media only screen and (min-width: 801px) {
+    .mobile{
+        display: none;
+    }
+}

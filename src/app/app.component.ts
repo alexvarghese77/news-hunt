@@ -8,7 +8,43 @@ import { NewsApiService } from './news-api.service'
 export class AppComponent {
   mArticles: Array<any>;
   mSources: Array<any>;
-
+  mCategory: Array<any> = [
+    {
+      key: "Top Head Lines",
+      value: "top-headlines"
+    },
+    {
+      key: "Business",
+      value: "business"
+    },
+    {
+      key: "entertainment",
+      value: "entertainment"
+    },
+    {
+      key: "Business",
+      value: "business"
+    },
+    {
+      key: "General",
+      value: "general"
+    },
+    {
+      key: "Health",
+      value: "health"
+    },
+    {
+      key: "Science",
+      value: "science"
+    },
+    {
+      key: "Sports",
+      value: "sports"
+    },
+    {
+      key: "Technology",
+      value: "technology"
+    }]
   constructor(private newsapi: NewsApiService) { }
 
   ngOnInit() {
