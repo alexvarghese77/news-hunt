@@ -10,8 +10,8 @@ export class AppComponent {
   mSources: Array<any>;
   mCategory: Array<any> = [
     {
-      key: "Top Head Lines",
-      value: "top-headlines"
+      key: "Top Headlines",
+      value: "general"
     },
     {
       key: "Business",
@@ -24,10 +24,6 @@ export class AppComponent {
     {
       key: "Business",
       value: "business"
-    },
-    {
-      key: "General",
-      value: "general"
     },
     {
       key: "Health",
